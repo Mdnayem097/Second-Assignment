@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-contaner .nav-parent{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: #1A0B2E;
+    color: white;
+    height: 92px;
+    padding: 16px 200px 16px 200px;
+}
+.nav-parent .nav-content li{
+    list-style: none;
+}
+.nav-parent .nav-content ul{
+    display: flex;
+    gap: 32px;
+}
+.nav-parent .logo h1 span{
+    color: rgba(251, 9, 180, 1);
+}
+
+/* Share style */
+.button button{
+    direction: none;
+    background-color: rgba(251, 9, 180, 1);
+    width: 135px;
+    height: 44px;
+    color: white;
+    border-radius: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    gap: 4px;
+}
+.Choose-TechWave-header{
+    font-size: 24px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.Choose-TechWave-p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+/* hero part */
+ .hero-contenar .hero-info{
+    background-image: url(img/hero-bg.png);
+    text-align: center;
+    height: 760px;
+    width: 1600px;
+    align-content: center;
+ }
+ .hero-info .hero-microphone img{
+    padding: 110px 140px 100px 100px;
+    background-image: url(img/hero-circle.png);
+    background-repeat: no-repeat;
+    
+ }
+ .hero-contenar .info h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 8px;
+ }
+.hero-contenar .info p{
+    color: rgba(255, 255, 255, 0.781);
+    margin-bottom: 24px;
+}
+
+.hero-contenar .info #btn1{
+    background-color: rgba(251, 9, 180, 1);
+    width: 201px;
+    height: 44px;
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border: none;
+}
+.hero-contenar .info #btn2{
+    width: 147px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 50px;
+    margin-left: 8px;
+
+}
+.hero-contenar .info #btn2 img{
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Choose TechWave part */
+#TechWav-contaner{
+    
+    background-color: #230E3D;
+    padding: 120px 200px 120px 200px;
+}
+#TechWav1{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    grid-area: TechWav1;
+}
+#TechWav2{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    grid-area: TechWav2;
+}
+#TechWav3{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    grid-area: TechWav3;
+}
+#TechWav4{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    grid-area: TechWav4;
+}
+#TechWav5{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    grid-area: TechWav5;
+}
+#titel{
+    justify-content: center;
+    font-size: 48px;
+    grid-area: titel;
+}
+#TechWav-contaner{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    
+    "titel titel titel"
+    "TechWav1 TechWav2 TechWav2"
+    "TechWav1 TechWav3 TechWav3"
+    "TechWav4 TechWav4 TechWav5"
+}
+#TechWav-contaner h2{
+    color: white;
+    display: flex;
+}
+
+/* About the Podcast */
+.Podcast-container{
+    background-color: rgba(26, 11, 46, 1);
+    padding: 50px 200px 120px 200px;
+    text-align: center;
+}
+.Podcast-container .Podcast-p h1{
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+}
+.Podcast-container .Podcast-p p{
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+    line-height: 20px;
+}
+.Podcast-container #border{
+    border: 1px solid white;
+    opacity: 0.1;
+    margin: 80px 0 80px 0;
+}
+.Podcast-container .Podcast-rating{
+    display: inline-flex;
+    color: white;
+    gap: 80px;
+}
+.Podcast-container .Podcast-rating div h1{
+    color: rgba(0, 255, 136, 1);
+    font-size: 48px;
+    line-height: 58px;
+}
+
+/* Featured-card */
+.Featured-card{
+    background-color: rgba( 26, 11, 46, 1);
+    padding: 120px 200px 120px 200px;
+}
+.Featured-card .Featured-Episodes{
+    display: flex;
+    gap: 30px;
+}
+.Featured-card .Featured-Episodes h3{
+    color: white;
+    padding: 24px 24px 12px 24px;
+    font-size: 24px;
+}
+.Featured-card .Featured-Episodes p{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0px 24px 12px 24px;
+    color: white;
+    opacity: 0.6;
+}
+.Featured-card .Featured-Episodes div{
+    background-color: #230E3D;
+    border-radius: 24px 24px 24px 24px;
+}
+.Featured-card .Featured-Episodes iframe{
+    border: none;
+    border-radius: 24px 24px 0 0;
+}
+.Featured-card .Featured-Episodes .min{
+    padding: 0 23px 24px 24px;
+}
+.Featured-card .Featured-Episodes .min b{
+    margin-left: 6px;
+    color: #00FF88;
+}
+.Featured-card h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 48px;
+}
