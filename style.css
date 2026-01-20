@@ -3,30 +3,6 @@
     margin: 0;
 }
 
-.nav-contaner .nav-parent{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    background-color: #1A0B2E;
-    color: white;
-    height: 92px;
-    padding: 16px 200px 16px 200px;
-}
-.nav-parent .nav-content li{
-    list-style: none;
-}
-.nav-parent .nav-content ul{
-    display: flex;
-    gap: 32px;
-}
-.nav-parent .logo h1 span{
-    background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 /* Share style */
 .button button{
     border: none;
@@ -56,19 +32,51 @@
     opacity: 0.6;
 }
 
+/* nav bar */
+.nav-contaner .nav-parent{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: #1A0B2E;
+    color: white;
+    height: 92px;
+    width: auto;
+    padding: 16px 200px 16px 200px;
+}
+.nav-parent .nav-info li{
+    list-style: none;
+}
+.nav-parent .nav-info ul{
+    display: flex;
+    gap: 32px;
+}
+.nav-parent .logo h1 span{
+    background: linear-gradient(to top right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 /* hero part */
  .hero-contenar .hero-info{
-    background-image: url(img/hero-bg.png);
     text-align: center;
-    height: 760px;
-    width: 1600px;
     align-content: center;
+    background-image: url(img/hero-bg.png);
+    height: 760px;
+    width: 100%;
  }
  .hero-info .hero-microphone img{
-    padding: 110px 140px 100px 100px;
+    padding: 90px 140px 100px 110px;
+    margin-left: 110px;
     background-image: url(img/hero-circle.png);
     background-repeat: no-repeat;
     
+ }
+ .hero-contenar .info{
+    margin-left: 100px;
  }
  .hero-contenar .info h1{
     color: white;
@@ -109,6 +117,8 @@
 }
 
 /* Choose TechWave part */
+
+
 #TechWav-contaner{
     
     background-color: #230E3D;
@@ -165,6 +175,21 @@
 }
 
 /* About the Podcast */
+
+.Podcast-container .Podcast-rating .reating1{
+    grid-area: reating1;
+}
+.Podcast-container .Podcast-rating .reating2{
+    grid-area: reating2;
+}
+.Podcast-container .Podcast-rating .reating3{
+    grid-area: reating3;
+}
+.Podcast-container .Podcast-rating .reating4{
+    grid-area: reating4;
+}
+
+
 .Podcast-container{
     background-color: rgba(26, 11, 46, 1);
     padding: 50px 200px 120px 200px;
@@ -196,6 +221,12 @@
     font-size: 48px;
     line-height: 58px;
 }
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Featured-card */
 .Featured-card{
@@ -243,7 +274,7 @@
 /* Footer */
 .footer-container{
     background-image: url(img/footer-bg.png);
-    width: 1600px;
+    width: auto;
     height: 412px;
     text-align: center;
 }
@@ -272,4 +303,73 @@
 }
 .footer-container p{
     color: rgba(255, 255, 255, 0.603);
+}
+
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 576px){
+    .nav-contaner .nav-info{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .nav-contaner .nav-parent{
+        padding: 20px 0 20px 20px;
+        background-color: #1A0B2E;
+        height: 40px;
+    }
+    .nav-parent::after{
+        content: url(img/hamburger-menu.png);
+        margin-right: 20px;
+    }
+    .nav-contaner{
+        border: 1px solid #00FF88;
+    }
+
+    /* hero */
+    .hero-contenar .hero-info{
+        background-image: url(img/hero-bg.png);
+        width: 100%;
+    }
+
+    .page-wrapper {
+        flex-direction: column-reverse;
+    }
+    .Podcast-container{
+        padding: 40px 20px 40px 20px;
+    }
+    .Podcast-container .Podcast-rating{
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        
+        "reating1 reating2"
+        "reating3 reating4"
+        ;
+    }
+    #TechWav-contaner{
+        padding: 24px;
+        display: block;
+    }
+    #TechWav-contaner h2{
+        margin-bottom: 16px;
+    }
+    #TechWav-contaner #TechWav1{
+        margin-bottom: 16px;
+    }
+    #TechWav-contaner #TechWav2{
+        margin-bottom: 16px;
+    }
+    #TechWav-contaner #TechWav3{
+        margin-bottom: 16px;
+    }
+    #TechWav-contaner #TechWav4{
+        margin-bottom: 16px;
+    }
+    #TechWav-contaner #TechWav5{
+        margin-bottom: 40px;
+    }
+    
+        
 }
