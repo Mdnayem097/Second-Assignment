@@ -272,6 +272,8 @@
 }
 
 /* Footer */
+
+
 .footer-container{
     background-image: url(img/footer-bg.png);
     width: auto;
@@ -369,6 +371,24 @@
     }
     #TechWav-contaner #TechWav5{
         margin-bottom: 40px;
+    }
+
+
+
+    .Featured-card{
+        padding: 40px 20px 60px 20px;
+    }
+    .Featured-card .Featured-Episodes{
+        flex-direction: column;
+    }
+    .Featured-card .Featured-Episodes iframe{
+    width: 100%;
+    }
+
+    .footer-container .social-link {
+        font-size: 20px;
+        padding: 0 72.5px 0 72.5px;
+        flex-wrap: wrap;
     }
     
         
