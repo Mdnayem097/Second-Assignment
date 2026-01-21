@@ -61,22 +61,36 @@
 
 
 /* hero part */
+
  .hero-contenar .hero-info{
     text-align: center;
     align-content: center;
     background-image: url(img/hero-bg.png);
-    height: 760px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
+    min-height: 100vh;
  }
  .hero-info .hero-microphone img{
     padding: 90px 140px 100px 110px;
-    margin-left: 110px;
     background-image: url(img/hero-circle.png);
     background-repeat: no-repeat;
     
  }
- .hero-contenar .info{
-    margin-left: 100px;
+  .hero-microphone {
+    position: relative;
+    display: inline-block;
+  }
+.hero-microphone b{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #00FF88;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
  }
  .hero-contenar .info h1{
     color: white;
@@ -325,15 +339,9 @@
         content: url(img/hamburger-menu.png);
         margin-right: 20px;
     }
-    .nav-contaner{
-        border: 1px solid #00FF88;
-    }
 
     /* hero */
-    .hero-contenar .hero-info{
-        background-image: url(img/hero-bg.png);
-        width: 100%;
-    }
+
 
     .page-wrapper {
         flex-direction: column-reverse;
